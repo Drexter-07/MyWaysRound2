@@ -1,55 +1,50 @@
-.app{
-  font-family: 'Arial',sans-serif;
+/* src/App.css */
+.app {
+  font-family: 'Arial', sans-serif;
   text-align: center;
 }
-.controls{
-  display:flex;
+
+.controls {
+  display: flex;
   justify-content: center;
-  gap:1rem;
-  margin-bottom:1rem;
+  gap: 1rem;
+  margin-bottom: 1rem;
 }
 
-.character-grid{
+.character-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px,1fr));
-  gap:1rem;
-  padding:1rem;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+  padding: 1rem;
 }
-.character-card{
-  background-color: #e6a5a5;
-  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+
+.character-card {
+  background-color: #fff;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
   border-radius: 4px;
   padding: 1rem;
   display: flex;
   flex-direction: column;
-  text-align: center;
+  align-items: center;
 }
 
-.character-card img{
-  border-radius: 50%;
-  height: 100px;
-  object-fit: cover;
+.character-card img {
   width: 100px;
   height: 100px;
-  margin-bottom:1rem;
-  z-index:1;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-bottom: 1rem;
 }
 
-.character-card h2{
-  font-size: 1.5rem;
-  margin: 15px 0;
-}
-
-input[type='text']{
-  border: 1px solid #c29c9c;
-  border-radius: 5px;
-  margin: 10px;
-  padding: 5px;
-  width: 200px;
-}
-
-.character-card a{
+.character-card a {
   text-decoration: none;
   background-color: #007bff;
-  
+  color: #fff;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  margin-top: auto;
+}
+
+.character-card a:hover {
+  background-color: #0056b3;
 }

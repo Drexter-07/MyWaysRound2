@@ -1,14 +1,15 @@
 import React from 'react';
 
-function characterCard({character})
-{
-    return(
-        <div className="character-card">
-            <img src={character.image} alt={character.name}/>
-            <h2>{character.name}</h2>
-            <a href={character.sourceUrl}>Source</a>
-        </div>
-    );
+function CharacterCard({ character }) {
+  return (
+    <div className="character-card">
+      <img src={character.image} alt={character.name} />
+      <h3>{character.name}</h3>
+      <a href={character.url} target="_blank" rel="noopener noreferrer">
+        More Info
+      </a>
+    </div>
+  );
 }
 
-export default characterCard;
+export default CharacterCard;
